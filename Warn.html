@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Conlang - PageWarn</title>
+    <script>
+        document.onkeydown = document.onkeyup = document.onkeypress = function(event) {
+            var e = event || window.event || arguments.callee.caller.arguments[0];
+            if (e && e.keyCode == 123) {
+                e.returnValue = false;
+                return (false);
+            }
+        }
+        console.warn("控制台被非正常开启");
+        console.warn("The console opened by abnormal.");
+    </script>
+</head>
+<body>
+    <p>页面丢失☹<br/>The page was lost :(</p>
+</body>
+</html>
